@@ -1,5 +1,5 @@
-import './App.css';
 import { useState } from 'react';
+import './styles/styles.css';
 
 
 
@@ -23,7 +23,7 @@ function App() {
     }
   }
 
-  console.log(JSON.stringify(joke, null, 4));
+  // console.log(JSON.stringify(joke, null, 4));
 
   return (
     <div className="App">
