@@ -29,10 +29,14 @@ function App() {
     <div className="App">
       <h1>Dad Joke Generator</h1>
       <button onClick={getJoke}>Tell Me A Joke!</button>
-      <h2>SetUp</h2>
-      <h3>{joke.body[0].setup}</h3>
-      <h2>Punch Line</h2>
-      <h3>{joke.body[0].punchline}</h3>
+      <div className="boxes">
+        <h2>SetUp</h2>
+        <h3>{joke.body[0].setup}</h3>
+      </div>
+      <div className="boxes">
+        <h2>Punch Line</h2>
+        <h3>{joke.body[0].punchline}</h3>
+      </div>
     </div>
   );
 }

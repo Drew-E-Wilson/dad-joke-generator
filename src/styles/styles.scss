@@ -1,4 +1,66 @@
+body {
+    background: rgba(236, 236, 99, 0.9);
+    display: flex;
+    justify-content: center;
+}
+
 .App {
-    background-color: yellow;
     text-align: center;
+    width: 800px;
+    margin-top: 10vh;
+    h1 {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 50px;
+        color: rgb(214, 16, 16);
+        text-shadow: 1px 1px 2px black
+    }
+    button {
+        color: rgb(236, 236, 99);
+        background: rgb(214, 16, 16);
+        height: 35px;
+        font-size: 20px;
+        border-radius: 3px;
+        border: 2px solid black;
+        &:hover {
+            background: rgb(160, 31, 31);
+        }
+    }
+}
+
+.boxes {
+    margin-top: 50px;
+    padding: 10px 40px;
+    height: 100px;
+    font-family: 'Gowun Batang', serif;
+    h2 {
+        text-decoration: underline;
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    
+}
+@media only screen and (max-width: 450px) {
+    .App {
+        width: 350px;
+        h1 {
+            font-size: 42px;
+        }
+        button {
+            margin-top: 20px;
+            font-size: 18px;
+            height: 30px;
+        }
+    }
+    .boxes {
+        margin-top: 20px;
+        height: 120px;
+        h2 {
+            font-size: 22px;
+        }
+        h3 {
+            font-size: 16px;
+        }
+    }
 }
